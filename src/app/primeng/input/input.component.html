@@ -1,0 +1,12 @@
+<div class="custom-input">
+    <label>{{ label }}</label>
+    <input
+      pInputText
+      [(ngModel)]="value"
+      [placeholder]="placeholder"
+      [ngClass]="{ invalid: isInvalid }"
+      (blur)="validateInput()"
+    />
+    <span class="error-message" *ngIf="isInvalid">{{ errorMessage }}</span>
+  </div>
+  

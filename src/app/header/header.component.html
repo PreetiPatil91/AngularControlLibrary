@@ -1,0 +1,59 @@
+<header>
+  <nav>
+    <a
+      class="button"
+      routerLink="/form-path"
+      routerLinkActive="activebutton"
+      ariaCurrentWhenActive="page"
+    >
+      Form Component
+    </a>
+    |
+    <a
+      class="button"
+      routerLink="/chart-path"
+      routerLinkActive="activebutton"
+      ariaCurrentWhenActive="page"
+    >
+      Chart Component
+    </a>
+    |
+    <a
+      class="button"
+      routerLink="/fileupload-path"
+      routerLinkActive="activebutton"
+      ariaCurrentWhenActive="page"
+    >
+      FileUpload Component
+    </a>
+    |
+    <a
+      class="button"
+      routerLink="/table-path"
+      routerLinkActive="activebutton"
+      ariaCurrentWhenActive="page"
+    >
+      Table Component
+    </a>
+  </nav>
+  <div style="display: none">
+    <!-- This HTML represents the initial state for the tutorial. It is not intended to appear in the app. -->
+    <app-chart-png></app-chart-png>
+    <app-form></app-form>
+    <app-fileupload-png></app-fileupload-png>
+    <app-ptable></app-ptable>
+
+    <!-- <app-dynamic-dropdown-png></app-dynamic-dropdown-png>
+        <app-dynamic-calender-png></app-dynamic-calender-png> -->
+    <!-- This HTML snippet is for when the user first adds the routerlink navigation. -->
+    <nav>
+      <a class="button" routerLink="/dashboard">Form Component</a> |
+      <a class="button" routerLink="/form-path">Form Component</a> |
+      <a class="button" routerLink="/chart-path">Chart Component</a>|
+      <a class="button" routerLink="/fileupload-path">
+        FileUpload Component 1</a
+      >
+      <a class="button" routerLink="/table-path"> Table Component</a>
+    </nav>
+  </div>
+</header>

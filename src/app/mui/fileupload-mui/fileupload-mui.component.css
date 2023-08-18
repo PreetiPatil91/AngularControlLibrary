@@ -1,0 +1,15 @@
+.file-upload-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .file-name {
+    margin-left: 10px;
+  }
+  
+  .success-message {
+    margin-top: 10px;
+    color: green;
+    font-weight: bold;
+  }
+  

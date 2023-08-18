@@ -1,0 +1,12 @@
+
+<h4>File Upload Component</h4>
+
+<app-dynamic-fileupload-png
+  mode="advanced"
+  [multiple]="true"
+  accept=".jpg, .png, .pdf"
+  [maxFileSize]="5000000"
+  url="https://www.primefaces.org/cdn/api/upload.php"
+>
+  <button pButton type="button" icon="pi pi-upload" label="Choose Files"></button>
+</app-dynamic-fileupload-png>

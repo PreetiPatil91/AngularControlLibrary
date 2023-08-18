@@ -1,0 +1,17 @@
+<mat-form-field>
+    <mat-label>Select a fruit</mat-label>
+    <mat-select
+      [(value)]="selectedValue"
+      (selectionChange)="onSelectionChange($event)"
+    >
+      <mat-option *ngFor="let option of options" [value]="option.value">{{
+        option.label
+      }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+  
+  <div class="selected-text" *ngIf="selectedValue">
+    Selected Label: {{ getLabel(selectedValue) }}<br />
+    Selected Value: {{ selectedValue }}
+  </div>
+  

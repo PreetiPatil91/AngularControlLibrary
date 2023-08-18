@@ -1,0 +1,10 @@
+<p-fileUpload
+      [mode]="mode"
+      [multiple]="multiple"
+      [accept]="accept"
+      [maxFileSize]="maxFileSize"
+      [url]="url"
+      (onUpload)="onUpload($event)"
+    >
+      <ng-content></ng-content>
+    </p-fileUpload>

@@ -1,0 +1,14 @@
+<!-- <form [formGroup]="mainFormGroup">
+    <app-input type="text" label="Name" controlName="name" (validationRequested)="validateInputs()"></app-input>
+    <app-input type="email" label="Email" controlName="email" (validationRequested)="validateInputs()"></app-input>
+    <app-input type="password" label="Password" controlName="password" (validationRequested)="validateInputs()"></app-input>
+    <app-input type="phone" label="Phone" controlName="phone" (validationRequested)="validateInputs()"></app-input>
+  
+    <button type="button" (click)="validateInputs()">Validate Inputs</button>
+  </form> -->
+  <app-input label="Email" type="email" placeholder="Enter email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$"></app-input>
+  <app-input label="Phone Number" type="text" placeholder="Enter phone number" pattern="^[0-9]{10}$"></app-input>
+  
+  <app-input label="Password" type="password" placeholder="Enter password" pattern="^(?=.*[a-zA-Z])(?=.*\d).{6,}$" errorMessage="Password must contain at least one letter and one number, and be at least 6 characters long."></app-input>
+  <app-input label="Name" type="name" placeholder="Enter your name"></app-input>
+  

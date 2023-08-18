@@ -1,0 +1,9 @@
+:host {
+    display: inline-block; /* To adjust the size of the component container */
+  }
+  
+  canvas {
+    max-width: 400px; /* Adjust the maximum width as needed */
+    max-height: 300px; /* Adjust the maximum height as needed */
+  }
+  

@@ -1,0 +1,4 @@
+<div class="parent-container">
+    <app-calender-png class="calendar" [selectedDate]="parentSelectedDate" (selectedDateChange)="onCustomCalendarDateChange($event)"></app-calender-png>
+    <div class="selected-date">Selected Date: {{ parentSelectedDate | date }}</div>
+  </div>

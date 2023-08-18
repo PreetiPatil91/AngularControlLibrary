@@ -1,0 +1,12 @@
+<form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+    <ng-container *ngFor="let field of fields">
+      <mat-form-field appearance="fill">
+        <mat-label>{{ field.label }}</mat-label>
+        <input matInput [formControl]="getFormControl(field.name)" [type]="field.type" [placeholder]="field.placeholder">
+        <mat-error *ngIf="getFormControl(field.name)?.invalid">{{ field.errorMessage }}</mat-error>
+      </mat-form-field>
+    </ng-container>
+  
+    <button mat-raised-button color="primary" type="submit">Submit</button>
+  </form>
+  

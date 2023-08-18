@@ -1,0 +1,10 @@
+<mat-form-field>
+    <input type="text" placeholder="Search Texts" matInput [formControl]="selectedTexts" [matAutocomplete]="auto">
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let text of filteredTexts | async" [value]="text">{{ text }}</mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+  
+  <div *ngIf="selectedTexts.value" class="selected-text">
+    Selected Text: {{ selectedTexts.value }}
+  </div>

@@ -1,0 +1,9 @@
+/* .table-header {
+  display: flex;
+  justify-content: space-between;
+} */
+/* Custom styling for the file upload button */
+p-fileUpload .ui-fileupload-button {
+    display: inline-block;
+  }
+  

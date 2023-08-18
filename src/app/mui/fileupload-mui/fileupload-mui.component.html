@@ -1,0 +1,9 @@
+<div>
+    <input type="file" (change)="onFileChange($event)" #fileInput style="display:none">
+    <button mat-raised-button color="primary" (click)="fileInput.click()">Select File</button>
+    <mat-progress-bar *ngIf="showProgress" mode="determinate" [value]="progressValue"></mat-progress-bar>
+    <div *ngIf="showSuccessMessage">
+      File '{{fileName}}' uploaded successfully!
+    </div>
+  </div>
+  
