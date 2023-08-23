@@ -1,0 +1,10 @@
+.dynamic-input-field {
+    display: block;
+    margin-bottom: 16px; /* Add some spacing between input fields */
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    width: 100%;
+  }
+  
